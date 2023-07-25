@@ -1,0 +1,21 @@
+.servicecard_container{
+    background-color: #FFFFFF;
+    width: 340px;
+    /* height: 450px; */
+    padding: 2%;
+    border-radius: 15%;
+    text-align: center;
+}
+.course_tag{
+    color: #5956E9;
+    font-size: 2rem;
+
+}
+.course_description{
+    font-size: 0.8rem;
+}
+.course_points{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,21 @@
+.header{
+    /* height: 10vh;
+    line-height: 10vh; */
+}
+.navlink ul li  {
+list-style: none !important;
+}
+.bg-body-tertiary{
+    background-color: #FFFFFF !important;
+}
+.header_underline{
+    width: 100vw;
+    border-bottom: 1px solid #DCDCDC;
+}
+.navbar_container{
+    padding-right: 10%;
+}
+.nav-link{
+    color: #232337;
+    font-weight: 500;
+}
