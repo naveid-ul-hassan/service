@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     /* background-color: aqua; */
+    background-color: #031831;
+    color: #FFFFFF;
 }
 .home-img-tag{
     width: 75%;

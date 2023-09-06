@@ -1,3 +1,6 @@
 .contact_container{
-    height: 90vh;
+    /* height: 90vh; */
+    padding: 6% 2%;
+    background-color: #031831;
+    color: white;
 }

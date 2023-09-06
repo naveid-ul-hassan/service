@@ -1,45 +1,99 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import PackageDetail from './PackageDetail'
+import Slider from "react-slick";
+import styles from './servicedetail.module.css'
+
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={`${className} styles.next-arrow`}
+            style={{ ...style, display: "block", background: "black", right: "20px" }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "black", left: "20px" }}
+            onClick={onClick}
+        />
+    );
+}
 
 function ServiceDetailComp() {
+    const location = useLocation()
+    const componentdata = location.state;
+    console.log("ajksdfjkas", componentdata)
+    const [tab, settab] = useState("basic_pakg")
+
+
+    const settings = {
+        dots: false,
+        lazyLoad: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
+
+
     return (
         <div className='row my-4'>
-            <div className='col-lg-8'>
-                heelo
+            <div className='col-lg-8 px-4'>
+                <h2 className='p-2'>{componentdata?.tittle}</h2>
+                <div className={`mx-4 my-3  ${styles.slider_tag}`}>
+                    <Slider {...settings} >
+                        <div>
+                            <img src="avatar-1.jpg" className={styles.slider_img} />
+                        </div>
+                        <div>
+                            <img src="avatar-2.jpg" className={styles.slider_img} />
+                        </div>
+                        <div>
+                            <img src="avatar-3.jpg" className={styles.slider_img} />
+                        </div>
+
+                    </Slider>
+                </div>
+                <p>{componentdata?.description}</p>
+                <h2 className='p-2'>Tittle 2</h2>
+                <ul >
+                    <li>The Lorem Ipsum text used </li>
+                    <li>The Lorem Ipsum text used </li>
+                    <li>The Lorem Ipsum text used </li>
+                    <li>The Lorem Ipsum text used </li>
+                    <li>The Lorem Ipsum text used </li>
+                </ul>
             </div>
             <div className='col-lg-4'>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Basic</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Standard</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Premium</button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <PackageDetail data={{
-                            tittle: "Basic",
-                            price: "$ 20.00",
-                            description: `Basic The Lorem Ipsum text used today can be tracked down to the printing press industry in the 16th century. An unknown printer used a scrambled version of Cicero's philosophical book "De Finibus Bonorum et Malorum", written in 45 BC, to create filler text" `
-                        }} /></div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <PackageDetail data={{
-                            tittle: "Standard",
-                            price: "$ 30.00",
-                            description: `Standard The Lorem Ipsum text used today can be tracked down to the printing press industry in the 16th century. An unknown printer used a scrambled version of Cicero's philosophical book "De Finibus Bonorum et Malorum", written in 45 BC, to create filler text" `
-                        }} />
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <PackageDetail data={{
-                            tittle: "Premium",
-                            price: "$ 40.00",
-                            description: `Premium Basic The Lorem Ipsum text used today can be tracked down to the printing press industry in the 16th century. An unknown printer used a scrambled version of Cicero's philosophical book "De Finibus Bonorum et Malorum", written in 45 BC, to create filler text" `
-                        }} />
-                    </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Basic</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="standard-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Standard</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="premium-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Premium</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="basic-tab"><PackageDetail data={componentdata?.packagedetail?.basic} /></div>
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="standard-tab"><PackageDetail data={componentdata?.packagedetail?.standard} /></div>
+                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="premium-tab"><PackageDetail data={componentdata?.packagedetail?.premium} /></div>
                 </div>
             </div>
-
         </div>
     )
 }

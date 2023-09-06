@@ -7,15 +7,19 @@ export default function PackageDetail({data}) {
     {
         data &&
         <> 
-        <div className='d-flex py-3'>
-        <h4>asdfa</h4>
-        <h4 className='mx-4'>asdf</h4>
+        <div className='py-3'>
+        <h4> $3000 </h4>
+        <p>
+              The Lorem Ipsum text used today can be tracked down to the printing press industry in the 16th century.
+            </p>
+        {/* <h4 className='mx-4'>asdf</h4> */}
+    </div>
+    <div className='d-flex'>
+        <p>6 days delivery</p>
+        <p className='mx-4'>3 Revision</p>
     </div>
     <div>
-        <p>asdfas</p>
-    </div>
-    <div>
-    <button type='button' className='btn btn-primary w-100'>continue</button>
+    <button type='button' className='btn btn-primary w-50'>continue</button>
     </div>
     </>
     }

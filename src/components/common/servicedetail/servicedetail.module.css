@@ -1,0 +1,10 @@
+
+/* .slider_tag .slick-next, .slick-prev{
+    background: black !important;
+} */
+.slider_img{
+    
+    width: 50% !important;
+    object-fit: contain !important;
+    margin: auto !important;
+}
