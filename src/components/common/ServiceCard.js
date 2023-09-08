@@ -33,6 +33,7 @@ function ServiceCard() {
     }
     return (
         <div className=' row justify-content-between'>
+            
              <div className={`${styles.servicecard_container}`}>
                 <h2 className={styles.course_tag}>Cource Name</h2>
                 <div className='d-flex justify-content-center align-items-center'> <h2> $20.00 </h2><span> / course</span></div>

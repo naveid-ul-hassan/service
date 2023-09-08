@@ -2,8 +2,8 @@
 
 }
 .cource_card:hover{
-    background: rgb(92, 119, 255);
-    color: bisque;
+    /* background: rgb(92, 119, 255); */
+    /* color: bisque; */
     cursor: pointer;
     
 }

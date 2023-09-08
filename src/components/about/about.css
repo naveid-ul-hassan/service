@@ -16,3 +16,13 @@
     position: relative;
     color: white;
 }
+.modal_content{
+    background-color: #012348;
+    color: white;
+    border-radius: 20px;
+    padding: 2%;
+
+}
+.btn_close{
+    color: white !important;
+}

@@ -45,8 +45,8 @@ const Cources = ()=>{
             <div className="cource_card"> 
             <img src="science.webp" alt="science"  className="cource_card_img"/>
             <h2 className="cource_card_tittle">Real Estate</h2>
-            </div>
-            </div>
+            </div>   
+            </div>   
         {/* <Swiper
         pagination={{
           type:"bullets",

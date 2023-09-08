@@ -1,11 +1,23 @@
 .servicecard_container{
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF;
     width: 340px;
-    /* height: 450px; */
+   
     padding: 2%;
     border-radius: 15%;
     text-align: center;
+    color: black; */
+    border: 1px solid #012348;
+    /* background-color: #FFFFFF; */
+    width: 340px;
+    /* height: 450px; */
+    padding: 2%;
+    border-radius: 20px;
+    text-align: center;
     color: black;
+}
+.servicecard_container:hover{
+    border: 2px solid #0C8B51;
+    cursor: pointer;
 }
 .course_tag{
     color: #5956E9;

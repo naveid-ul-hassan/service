@@ -1,5 +1,8 @@
 .footer{
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #031831;
+    color: white;
+    padding: 4%;
 }
 .footer_content{
     display: flex;
@@ -8,6 +11,10 @@
     align-self: center;
 
 }
-.footer_links{
+.footer_contact{
     gap: 4%;
+}
+.footer_links{
+    display: flex;
+    gap: 10%;
 }
