@@ -83,3 +83,35 @@
     justify-content: center !important;
 
   }
+
+  @media (min-width: 992px) {
+    .service_section_container{
+      
+        width: 19.666667% !important;
+      }
+}
+  .service_section_container{
+    border: 1px solid;
+    padding: 2%;
+    border-radius: 15px;
+    /* width: 19.666667% !important; */
+  }
+  .service_section_container:hover{
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    color: black;
+    transition: all ease-in-out 0.5s;
+    border-radius: 15px;
+  }
+  .service_section_main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .featured-area{
+    background-color: #0C8B51;
+    padding: 5% 0%;
+  }
+
+ 

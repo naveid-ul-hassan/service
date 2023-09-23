@@ -1,12 +1,17 @@
 import React from 'react'
-import styles from "./Home.module.css"
+import "./Home.css"
 import UserReview from '../review/UserReview'
 import Cources from '../cources/Cources'
+import Carousol from './Carousol'
+import GetHelp from './GetHelp'
+import ChooseUs from './ChooseUs'
+import CountSection from '../count/CounSection'
+
 
 function Home() {
   return (
     <>
-    <div className={styles.home_container} >
+    <div className='home_container' >
       <div className="row container py-4">
         <div className="col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-center" >
           <div className='col-10'>
@@ -26,7 +31,11 @@ function Home() {
        <UserReview />
       </div> */}
     </div>
-    <Cources />
+    {/* <GetHelp /> */}
+    {/* <Carousol /> */}
+    {/* <Cources /> */}
+    <ChooseUs />
+    {/* <CountSection /> */}
     </>
   )
 }
