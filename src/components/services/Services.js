@@ -6,7 +6,7 @@ import Cources from '../cources/Cources';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 function Services() {
   return (
-    <div className='py-5'>
+    <div className='services_container py-5'>
        <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
 
