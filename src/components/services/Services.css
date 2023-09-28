@@ -12,7 +12,7 @@
 .services_container .featured-services .icon-box::before {
   content: "";
   position: absolute;
-  background: #cbe0fb;
+  background: #0C8B51;
   right: 0;
   left: 0;
   bottom: 0;
@@ -22,7 +22,7 @@
 }
 
 .services_container .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #0C8B51;
   top: 0;
   border-radius: 0px;
 }
@@ -34,7 +34,7 @@
 .services_container .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #0C8B51;
   transition: all 0.3s ease-in-out;
 }
 

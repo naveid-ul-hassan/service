@@ -54,11 +54,11 @@ function Footer() {
                 <div className="col-lg-4 d-flex flex-column align-items-center">
                     <h2>Quick Links</h2>
                     <ul className="navbar-nav footer_navbar  mb-2 mb-lg-0 navbar_container ">
-                            <li className="nav-item  px-3"> <NavLink className="nav-link" activeClassName="active"   to='/' style={{color:'white'}}>Home</NavLink></li>
-                            <li className="nav-item  px-3"> <NavLink className="nav-link" activeClassName="active" to='/about' style={{color:'white'}}>About Us</NavLink></li>
-                            <li className="nav-item px-3"> <NavLink className="nav-link"  activeClassName="active" to='/services' style={{color:'white'}}>Services</NavLink></li>
-                            <li className="nav-item px-3"> <NavLink className="nav-link" activeClassName="active" to='/blogs' style={{color:'white'}}>Blogs</NavLink></li>
-                            <li className="nav-item px-3"> <NavLink className="nav-link" activeClassName="active" to='/contact' style={{color:'white'}}>Contact Us</NavLink></li>
+                            <li className="nav-item  px-3"> <NavLink className="nav-link" activeClassName="active"   to='/' >Home</NavLink></li>
+                            <li className="nav-item  px-3"> <NavLink className="nav-link" activeClassName="active" to='/about' >About Us</NavLink></li>
+                            <li className="nav-item px-3"> <NavLink className="nav-link"  activeClassName="active" to='/services' >Services</NavLink></li>
+                            <li className="nav-item px-3"> <NavLink className="nav-link" activeClassName="active" to='/blogs' >Blogs</NavLink></li>
+                            <li className="nav-item px-3"> <NavLink className="nav-link" activeClassName="active" to='/contact'>Contact Us</NavLink></li>
                         </ul>
                 </div>
                 <div className={`col-lg-3 d-flex flex-column   ${styles.footer_contact} `}>

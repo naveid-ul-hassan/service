@@ -6,6 +6,7 @@ import Carousol from './Carousol'
 import GetHelp from './GetHelp'
 import ChooseUs from './ChooseUs'
 import CountSection from '../count/CounSection'
+import Testimonials from '../testimonials/testimonials'
 
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
     {/* <Carousol /> */}
     {/* <Cources /> */}
     <ChooseUs />
+    <Testimonials />
     {/* <CountSection /> */}
     </>
   )

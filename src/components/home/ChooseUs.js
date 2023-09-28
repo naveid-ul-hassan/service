@@ -6,8 +6,8 @@ return(
     <section id="services" class="services">
     <div class="container" data-aos="fade-up">
 
-      <div class="section-title py-3">
-        <h2>Why Choose Us</h2>
+      <div class="section-title alignCenter py-3">
+        <h2 align="center">Why Choose Us</h2>
         {/* <h3>Check our <span>Services</span></h3> */}
         {/* <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> */}
       </div>
